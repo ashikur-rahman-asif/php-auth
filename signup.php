@@ -1,3 +1,6 @@
+<?php
+include "partials/_dbconnect.php"
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +12,16 @@
 </head>
 
 <body>
+    <div class="bg-green-100 flex justify-center items-center border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+        <strong class="font-bold">Success!</strong>
+        <span class="block sm:inline">Your action was successful.You can now login</span>
+        <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
+            <svg class="fill-current h-6 w-6 text-green-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <title>Close</title>
+                <path d="M14.293 5.293a1 1 0 011.414 0L16 6.586l-5.293 5.293a1 1 0 01-1.414 0L10 11.414l-5.293 5.293a1 1 0 01-1.414 0L4 16.586 8.293 11.293a1 1 0 010-1.414L4 6.586 5.293 5.293a1 1 0 011.414 0L10 9.414l5.293-5.293a1 1 0 011.414 0L16 4.586z"></path>
+            </svg>
+        </span>
+    </div>
     <div class="min-h-screen flex items-center justify-center bg-gray-100">
         <form action="/php-auth/signup.php" method="post" class="bg-white p-8 rounded-lg shadow-md w-96">
             <h2 class="text-2xl font-semibold mb-6">Sign Up</h2>
